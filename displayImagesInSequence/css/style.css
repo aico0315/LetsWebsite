@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+.grid {
+  display: grid; /*画像をタイル型に表示させる*/
+  gap: 30px; /*要素間の隙間*/
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  max-width: 1440px;
+  margin: 80px 50px;
+  padding: 30px;
+}
+
+.img-item {
+  filter: blur(20px);
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}

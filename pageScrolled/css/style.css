@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+#bar {
+  background-color: rgba(249, 116, 203, 0.708);
+  position: fixed; /*画面上部に固定*/
+  top: 0; /*固定する場所をtopとleftで指定*/
+  left: 0;
+  height: 7px;
+}
+
+article {
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem;
+  line-height: 1.8;
+}
+
+h2 {
+  margin: 2rem 0 1rem;
+}

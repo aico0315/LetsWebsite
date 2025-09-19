@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+body {
+  padding: 2rem;
+  transition: .5s;
+}
+
+.dark-theme {
+  background-color: #000;
+  color: #ddd;
+}
+
+#btn {
+  background-color: #0bd;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  color: #fff;
+  border-radius: 8px;
+  border: 0;
+  cursor: pointer;
+}

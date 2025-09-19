@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+body {
+  text-align: center;
+  padding: 2rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+input[type="checkbox"] {
+  /* ここに独自のスタイルを追加 */
+  width: 15px;
+  height: 15px;
+  border: 1px solid #000;
+  background-color: #fff;
+  display: inline-block; /* インライン要素なので、ブロック要素に変更すると表示領域を確保しやすい */
+}
+
+#btn {
+  background: #0bd;
+  padding: .75rem 1rem;
+  border-radius: 8px;
+}
+
+#btn:disabled {
+  background: #ccc;
+}
