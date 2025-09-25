@@ -10,8 +10,40 @@ LOADING
 #loading {
   background-color: lightgray;
   position: fixed;
-  inset: 0;
+  inset: 0;/*親要素の端から子要素までの距離を設定*/
   z-index: 9999;
   display: grid;
   place-items: center;
+}
+
+/* #loading-screen {
+  background-color: lightgreen;
+  position: fixed;
+  inset: 0; /*paddingやmarginと似たプロパティ position: absolute; や position: fixed; などと組み合わせて簡単に要素を配置したいときに使える*/
+  /* z-index: 9998;
+  translate: 0 100vh;
+} */
+
+#loading-left,
+#loading-right {
+  background-color: crimson;
+  position: fixed;
+  width: 50vw;
+  height: 100vh;
+  z-index: 9998;
+}
+
+#loading-left {
+  left: 0;
+  transform-origin: left top; /*変形(transform)の基準点を指定*/
+}
+
+#loading-right {
+  right: 0;
+  transform-origin: right top;
+}
+
+#loading p {
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
 }
