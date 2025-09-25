@@ -69,3 +69,25 @@ window.addEventListener('load', () => {
       }
   );
 });
+
+/*
+画像ギャラリー
+============================================================ */
+const mainImage = document.querySelector('.gallery-image img');
+const thumbImages = document.querySelectorAll('.gallery-thumbnails img');
+
+for(let i = 0; i < thumbImages.length; i++) {
+  thumbImages[i].addEventListener('mouseover', (event) => {
+    mainImage.src = event.target.src;
+    mainImage.animate({opacity: [0, 1]}, 500);
+  });
+}
+
+/* 上記のfor文と同じ処理内容 forEach文だとlet i = 0や要素の数などを考えず、直感的に処理をかける
+thumbImages.forEach((thumbImage) => {
+  thumbImage.addEventListener('mouseover', (event) => {
+    mainImage.src = event.target.src
+    mainImage.animate({opacity: [0, 1]}, 500);
+  });
+});
+*/
